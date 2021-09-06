@@ -61,8 +61,8 @@ const handleSetContent = (editor: Editor, headState: Cell<string>, footState: Ce
     evt.content = Tools.trim(content.substring(startPos + 1, endPos));
     footState.set(low(content.substring(endPos)));
   } else {
-    headState.set(getDefaultHeader(editor));
-    footState.set('\n</body>\n</html>');
+    //headState.set(getDefaultHeader(editor));
+    //footState.set('\n</body>\n</html>');
   }
 
   // Parse header and update iframe
